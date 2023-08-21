@@ -1,0 +1,31 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Proje.Models.departmanlar
+
+
+<form method="post">
+    Departman:
+    
+   
+    
+
+
+    <table class="table table-hover mt-5 shadow-lg p-3 mb-5 bg-white rounded">
+        <thead>
+            <tr class="text-center">
+                <th scope="col">Görev Başlık @Html.TextBoxFor(x=>x.departmanad, new{@class="form-control"})</th>
+                <th scope="col">Görev İçeriği @Html.TextBoxFor(x=>x.Detay, new{@class="form-control"})</th>
+                <th scope="col">Görev Kime Atanasın @Html.TextBoxFor(x=>x.GorevAdami, new{@class="form-control"})</th>
+            </tr>
+        </thead>
+    </table>
+
+
+
+    <br />
+    <button type="submit" class="btn btn-outline-info">Departmanı Kaydet</button>
+    
+</form>
